@@ -30,4 +30,5 @@
     "editor.tabSize": 2,
     "editor.maxTokenizationLineLength": 2500,
   },
+  "editor.minimap.autohide": true,
 }
