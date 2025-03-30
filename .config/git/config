@@ -1,0 +1,13 @@
+[include]
+	path = ~/.dotfiles/.config/git/config.local # private
+[alias]
+	st = status -s
+[core]
+	editor = nvim
+	excludesfile = ~/.dotfiles/.config/git/.gitignore_global
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[mergetool]
+	keepBackup = false

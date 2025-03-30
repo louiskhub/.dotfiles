@@ -1,0 +1,176 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "cmd+k cmd+b",
+    "command": "-editor.action.setSelectionAnchor",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+[Period]",
+    "command": "editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "f12",
+    "command": "-editor.action.revealDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  // Toggle between terminal and editor focus
+  {
+    "key": "cmd+[Minus]",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "cmd+[Minus]",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+[Period]",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+[Period]",
+    "command": "-workbench.action.terminal.quickFix",
+    "when": "terminalFocus && terminalProcessSupported"
+  },
+  {
+    "key": "cmd+[Period]",
+    "command": "-acceptSelectedCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "cmd+[Period]",
+    "command": "-problems.action.showQuickFixes",
+    "when": "problemFocus"
+  },
+  {
+    "key": "alt+f12",
+    "command": "-editor.action.peekDefinition",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !inReferenceSearchEditor && !isInEmbeddedEditor"
+  },
+  {
+    "key": "cmd+k f12",
+    "command": "-editor.action.revealDefinitionAside",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  },
+  {
+    "key": "cmd+0",
+    "command": "-workbench.action.focusSideBar"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "-workbench.action.terminal.openNativeConsole",
+    "when": "!terminalFocus"
+  },
+  {
+    "key": "shift+cmd+c",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "cmd+[Minus]",
+    "command": "terminal.focus"
+  },
+  {
+    "key": "cmd+k cmd+y",
+    "command": "workbench.files.action.collapseExplorerFolders"
+  },
+  {
+    "key": "shift+cmd+[Period]",
+    "command": "-breadcrumbs.focus",
+    "when": "breadcrumbsPossible && breadcrumbsVisible"
+  },
+  {
+    "key": "shift+cmd+[Period]",
+    "command": "editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "cmd+[Period]",
+    "command": "-editor.action.quickFix",
+    "when": "editorHasCodeActionsProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "f5",
+    "command": "editor.action.peekDefinition"
+  },
+  {
+    "key": "f6",
+    "command": "togglePeekWidgetFocus",
+    "when": "inReferenceSearchEditor || referenceSearchVisible"
+  },
+  {
+    "key": "cmd+k f2",
+    "command": "-togglePeekWidgetFocus",
+    "when": "inReferenceSearchEditor || referenceSearchVisible"
+  },
+  {
+    "key": "f9",
+    "command": "-editor.debug.action.toggleBreakpoint",
+    "when": "debuggersAvailable && disassemblyViewFocus || debuggersAvailable && editorTextFocus"
+  },
+  {
+    "key": "f8",
+    "command": "-editor.action.marker.nextInFiles",
+    "when": "editorFocus"
+  },
+  {
+    "key": "f1",
+    "command": "-workbench.action.showCommands"
+  },
+  {
+    "key": "f6",
+    "command": "-workbench.action.debug.pause",
+    "when": "debugState == 'running'"
+  },
+  {
+    "key": "f6",
+    "command": "-workbench.action.focusNextPart"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.continue",
+    "when": "debugState == 'stopped'"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
+  },
+  {
+    "key": "f5",
+    "command": "-debug.openView",
+    "when": "!debuggersAvailable"
+  },
+  {
+    "key": "f7",
+    "command": "-editor.action.accessibleDiffViewer.next",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "f7",
+    "command": "-editor.action.wordHighlight.next",
+    "when": "editorTextFocus && hasWordHighlights"
+  },
+  {
+    "key": "f7",
+    "command": "-inlineChat.moveToNextHunk",
+    "when": "inlineChatHasProvider && inlineChatVisible"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "cmd+i",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  },
+  {
+    "key": "alt+escape",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly && !suggestWidgetVisible"
+  }
+]

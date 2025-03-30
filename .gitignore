@@ -1,0 +1,4 @@
+.config/zsh/.oh-my-zsh/
+.config/git/config.local
+.local/
+.cache/
