@@ -11,9 +11,6 @@ fi
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-
-  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> $HOME/.zprofile
-  eval "$(/opt/homebrew/bin/brew shellenv)"
 fi
 
 # Removes .zshenv from $HOME (if it exists) and symlinks the .zshenv file from the .dotfiles
@@ -31,10 +28,8 @@ ln -sw $HOME/.dotfiles/.config/ghostty/config $HOME/Library/Application\ Support
 
 # Removes any user configs for VSCode (if exist) and symlinks custom config.
 rm -f ~/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/keybindings.json
-rm -rf ~/.vscode/
 ln -sw $HOME/.dotfiles/.config/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 ln -sw $HOME/.dotfiles/.config/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
-ln -sw $HOME/.dotfiles/.config/vscode/.vscode/ $HOME/.vscode
 
 # Set macOS preferences - we will run this last because this will reload the shell (might require a restart for all settings to take effect)
 source ./.macos
