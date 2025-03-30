@@ -26,10 +26,14 @@ brew bundle --file ./Brewfile
 rm $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
 ln -sw $HOME/.dotfiles/.config/ghostty/config $HOME/Library/Application\ Support/com.mitchellh.ghostty/config
 
-# Removes any user configs for VSCode (if exist) and symlinks custom config.
+# Removes any user configs for Cursor/VSCode (if exist) and symlinks custom config.
 rm -f ~/Library/Application\ Support/Code/User/settings.json ~/Library/Application\ Support/Code/User/keybindings.json
+rm -f ~/Library/Application\ Support/Cursor/User/settings.json ~/Library/Application\ Support/Cursor/User/keybindings.json
 ln -sw $HOME/.dotfiles/.config/vscode/settings.json $HOME/Library/Application\ Support/Code/User/settings.json
 ln -sw $HOME/.dotfiles/.config/vscode/keybindings.json $HOME/Library/Application\ Support/Code/User/keybindings.json
+ln -sw $HOME/.dotfiles/.config/vscode/settings.json $HOME/Library/Application\ Support/Cursor/User/settings.json
+ln -sw $HOME/.dotfiles/.config/vscode/keybindings.json $HOME/Library/Application\ Support/Cursor/User/keybindings.json
+
 
 # Set macOS preferences - we will run this last because this will reload the shell (might require a restart for all settings to take effect)
 source ./.macos

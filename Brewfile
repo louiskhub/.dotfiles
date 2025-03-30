@@ -1,7 +1,4 @@
-# Taps
 tap "hashicorp/tap"
-
-# Binaries
 brew "awscli"
 brew "ffmpeg"
 brew "fzf"
@@ -14,8 +11,7 @@ brew "pnpm"
 brew "ripgrep"
 brew "uv"
 brew "hashicorp/tap/terraform"
-
-# Apps
+cask "cursor"
 cask "devtoys"
 cask "ghostty"
 cask "visual-studio-code"
