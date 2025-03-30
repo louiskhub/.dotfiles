@@ -3,5 +3,17 @@
     {
         "key": "cmd+i",
         "command": "composerMode.agent"
+    },
+    {
+        "key": "cmd+k cmd+y",
+        "command": "workbench.files.action.collapseExplorerFolders"
+    },
+    {
+        "key": "cmd+k cmd+s",
+        "command": "workbench.action.openGlobalKeybindings"
+    },
+    {
+        "key": "cmd+r cmd+s",
+        "command": "-workbench.action.openGlobalKeybindings"
     }
 ]
