@@ -101,6 +101,7 @@ alias vim="nvim"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 export PATH="/opt/homebrew/opt/node@20/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 # pnpm
 export PNPM_HOME="/Users/louiskapp/Library/pnpm"
