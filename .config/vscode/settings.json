@@ -9,8 +9,6 @@
   "explorer.compactFolders": true,
   "material-icon-theme.folders.color": "#43a047",
   "workbench.layoutControl.enabled": false,
-  "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Cursor Dark Midnight",
   "workbench.activityBar.location": "top",
   "workbench.sideBar.location": "right",
   "diffEditor.ignoreTrimWhitespace": false,
@@ -31,4 +29,5 @@
     "editor.maxTokenizationLineLength": 2500,
   },
   "editor.minimap.autohide": true,
+  "workbench.iconTheme": "material-icon-theme",
 }
