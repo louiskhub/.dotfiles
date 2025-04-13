@@ -1,8 +1,9 @@
 # Keep $HOME clean from history files
 mkdir -p $XDG_DATA_HOME/zsh && export HISTFILE="$XDG_DATA_HOME/zsh/history"
-mkdir -p $XDG_DATA_HOME/python && export HISTFILE="$XDG_DATA_HOME/python/history"
-mkdir -p $XDG_DATA_HOME/node && export HISTFILE="$XDG_DATA_HOME/node/history"
-mkdir -p $XDG_DATA_HOME/less && export HISTFILE="$XDG_DATA_HOME/less/history"
+mkdir -p $XDG_DATA_HOME/python && export PYTHON_HISTORY="$XDG_DATA_HOME/python/history"
+mkdir -p $XDG_DATA_HOME/node && export NODE_REPL_HISTORY="$XDG_DATA_HOME/node/history"
+mkdir -p $XDG_DATA_HOME/less && export LESSHISTFILE="$XDG_DATA_HOME/less/history"
+mkdir -p $XDG_CACHE_HOME/npm && export NPM_CONFIG_CACHE="$XDG_CACHE_HOME/npm"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
