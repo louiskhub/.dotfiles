@@ -10,7 +10,6 @@
   "material-icon-theme.folders.color": "#43a047",
   "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "top",
-  "workbench.sideBar.location": "right",
   "diffEditor.ignoreTrimWhitespace": false,
   "window.confirmBeforeClose": "keyboardOnly",
   "security.workspace.trust.untrustedFiles": "open",
@@ -22,12 +21,16 @@
   "git.ignoreRebaseWarning": true,
   "git.openRepositoryInParentFolders": "never",
   "[html]": {
-    "editor.suggest.insertMode": "replace",
+    "editor.suggest.insertMode": "replace"
   },
   "[javascript]": {
     "editor.tabSize": 2,
-    "editor.maxTokenizationLineLength": 2500,
+    "editor.maxTokenizationLineLength": 2500
   },
   "editor.minimap.autohide": true,
   "workbench.iconTheme": "material-icon-theme",
+  "workbench.sideBar.location": "right",
+  "git.blame.editorDecoration.enabled": false,
+  "json.format.enable": false,
+  "github.copilot.nextEditSuggestions.enabled": false
 }
