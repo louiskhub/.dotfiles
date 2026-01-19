@@ -8,7 +8,6 @@
   "workbench.editor.labelFormat": "short",
   "explorer.compactFolders": true,
   "material-icon-theme.folders.color": "#43a047",
-  "workbench.layoutControl.enabled": false,
   "workbench.activityBar.location": "top",
   "diffEditor.ignoreTrimWhitespace": false,
   "window.confirmBeforeClose": "keyboardOnly",
@@ -27,10 +26,20 @@
     "editor.tabSize": 2,
     "editor.maxTokenizationLineLength": 2500
   },
-  "editor.minimap.autohide": true,
+  "editor.minimap.autohide": "mouseover",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
   "git.blame.editorDecoration.enabled": false,
   "json.format.enable": false,
-  "github.copilot.nextEditSuggestions.enabled": false
+  "github.copilot.nextEditSuggestions.enabled": false,
+  "latex-workshop.formatting.latex": "latexindent",
+  "editor.formatOnPaste": true,
+  "xml.symbols.maxItemsComputed": 30000,
+  "xml.server.vmargs": "-Xmx128M",
+  "biome.suggestInstallingGlobally": false,
+  "python.analysis.typeCheckingMode": "standard",
+  "github.copilot.nextEditSuggestions.allowWhitespaceOnlyChanges": false,
+  "github.copilot.nextEditSuggestions.fixes": false,
+  "editor.accessibilitySupport": "off",
+  "chat.viewSessions.orientation": "stacked"
 }
