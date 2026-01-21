@@ -9,3 +9,6 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export ZSH="$ZDOTDIR/.oh-my-zsh" # Path to oh-my-zsh installation.
 export ZSH_CACHE_DIR="$ZSH/cache"
 export ZSH_COMPDUMP="$ZSH_CACHE_DIR/.zcompdump"
+
+export GOOGLE_CLOUD_PROJECT="ai-dev-6a78"
+export GOOGLE_APPLICATION_CREDENTIALS="$HOME/.config/gcloud/application_default_credentials.json"
